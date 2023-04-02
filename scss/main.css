@@ -75,6 +75,7 @@ button {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0px 100px;
   }
   .nav-main-container .logo-text {
     margin: 0px;
