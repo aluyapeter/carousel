@@ -1,0 +1,35 @@
+.testimonial-sec-cont {
+    background-color: $testimonial-sec-bg-color;
+    margin: auto;
+    text-align: center;
+    padding: 60px 0px;
+
+    .testimonial-para {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+    .testimonial-heading {
+        width: 70%;
+        margin: 20px auto;
+        color: $primary-company-color;
+        font-size: 35px;
+    }
+    .testimonial-individual-cont {
+        background-color: white;
+        width: 90%;
+        margin: 30px auto;
+        border-radius: 15px;
+        padding: 50px;
+
+        p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: $second-secondary-color;
+        }
+        h3 {
+            color: $primary-company-color;
+            font-size: 30px;
+            margin: 50px auto;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.menu-cont {
+    position: absolute;
+    z-index: 1;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    right: 2rem;
+
+    .menu-btn {
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 25px;
+        height: 2px;
+        background-color: $primary-company-color;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 25px;
+            height: 2px;
+            background-color: $primary-company-color;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 25px;
+            height: 2px;
+            background-color: $primary-company-color;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .menu-cont {
+        display: none;
+    }
+}
