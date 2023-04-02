@@ -14,115 +14,99 @@
     @include flexCenter(row);
     padding: 0 2rem;
 
-    .nav-sub-container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        .logo-text {
-            margin-right: 250px;
-            text-decoration: none;
-            font-size: 30px;
-            font-weight: bold;
-            color: $secondary-company-color;
-        }
-        .nav-items {
-            display: none;
-        }
-        .login-sign-up-cont {
-            display: none;
-        }
+    .logo-text {
+        margin-right: auto;
+        justify-self: flex-start;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+        color: $secondary-company-color;
     }
-
     
+    .nav-items {
+        display: none;
+    }
+    .login-sign-up-cont {
+        display: none;
+    }
 }
 
 @media (min-width: 1000px) {
     .nav-main-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
 
-        .nav-sub-container {
+        .logo-text {
+            margin: 0px;
+            color: $secondary-company-color;
+        }
+        .nav-items {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            width: 85%;
+            list-style: none;
+            color: black;
 
-            .logo-text {
-                margin: 0px;
-                color: $secondary-company-color;
+            .home,
+            .about,
+            .faqs {
+                margin-right: 40px;
             }
-            .nav-items {
-                display: flex;
-                justify-content: space-between;
-                list-style: none;
-                color: black;
-    
-                .home,
-                .about,
-                .faqs {
-                    margin-right: 40px;
-                }
-    
-                .nav-item {
-                    a {
-                        text-decoration: none;
-                        color: black;
-                        transition: all ease-in 0.1s;
-    
-                        &:hover {
-                            border-bottom: 2px solid $secondary-company-color;
-                            @include transition();
-                        }
-                    }
-                    #contact-us {
-                        margin: 0px;
-                    }
-                }
-            }
-            .login-sign-up-cont {
-                display: flex;
-    
-                .login-btn {
-                    background-color: white;
-                    border: 1px solid $secondary-company-color;
-                    height: 40px;
-                    width: 100px;
-                    border-radius: 10px;
-                    color: $secondary-company-color;
-                    font-weight: bold;
-                    margin-right: 10px;
-    
+
+            .nav-item {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    transition: all ease-in 0.1s;
+
                     &:hover {
-                        background-color: $secondary-company-color;
-                        border: none;
-                        color: white;
+                        border-bottom: 2px solid $secondary-company-color;
                         @include transition();
                     }
                 }
-                .sign-up-btn {
-                    height: 40px;
-                    width: 150px;
-                    border-radius: 10px;
-                    border: none;
-                    // font-size: 16px;
-                    font-weight: bold;
-                    background-color: $secondary-company-color;
-                    color: white;
-    
-                    &:hover {
-                        background-color: white;
-                        border: 1px solid $secondary-company-color;
-                        @include transition();
-                        color: $secondary-company-color;
-                    }
+                #contact-us {
+                    margin: 0px;
                 }
             }
         }
-        
-        // width: 80%;
-        // padding: 0 7rem;
+        .login-sign-up-cont {
+            display: flex;
 
-        
-        
+            .login-btn {
+                background-color: white;
+                border: 1px solid $secondary-company-color;
+                height: 40px;
+                width: 100px;
+                border-radius: 10px;
+                color: $secondary-company-color;
+                font-weight: bold;
+                margin-right: 10px;
+
+                &:hover {
+                    background-color: $secondary-company-color;
+                    border: none;
+                    color: white;
+                    @include transition();
+                }
+            }
+            .sign-up-btn {
+                height: 40px;
+                width: 150px;
+                border-radius: 10px;
+                border: none;
+                // font-size: 16px;
+                font-weight: bold;
+                background-color: $secondary-company-color;
+                color: white;
+
+                &:hover {
+                    background-color: white;
+                    border: 1px solid $secondary-company-color;
+                    @include transition();
+                    color: $secondary-company-color;
+                }
+            }
+        }
     }
 }
