@@ -547,22 +547,55 @@ button {
   color: navy;
   font-size: 35px;
 }
-.testimonial-sec-cont .testimonial-individual-cont {
+.testimonial-sec-cont .carousel {
   background-color: white;
   width: 90%;
-  margin: 30px auto;
+  margin: 0px auto 60px auto;
   border-radius: 15px;
-  padding: 50px;
+  overflow: hidden;
+  position: relative;
 }
-.testimonial-sec-cont .testimonial-individual-cont p {
-  font-size: 1.2rem;
+.testimonial-sec-cont .carousel .carousel-inner {
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+.testimonial-sec-cont .carousel .carousel-inner .carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+}
+.testimonial-sec-cont .carousel .carousel-inner .carousel-item p {
+  font-size: 1.1rem;
   line-height: 2rem;
   color: gray;
+  margin: 30px;
 }
-.testimonial-sec-cont .testimonial-individual-cont h3 {
+.testimonial-sec-cont .carousel .carousel-inner .carousel-item h3 {
   color: navy;
-  font-size: 30px;
-  margin: 50px auto;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+.testimonial-sec-cont .carousel-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.testimonial-sec-cont .carousel-indicators .indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  font-weight: bold;
+  margin-right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.testimonial-sec-cont .carousel-indicators .indicator.active {
+  background-color: navy;
+  color: white;
 }
 
 .start-growing-cont {
