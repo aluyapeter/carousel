@@ -431,7 +431,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 345px;
   margin: auto;
 }
 .sub-main2 .vertical-hero .hero-cont .num-line {
