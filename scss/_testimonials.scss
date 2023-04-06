@@ -70,5 +70,17 @@
                 color: white;
             }
         }
+        .indicator-fa {
+            font-size: 18px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .right-arrow {
+            margin-right: 0px !important;
+            color: $primary-company-color;
+        }
+        .left-arrow {
+            color: $primary-company-color;
+        }
     }
 }

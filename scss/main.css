@@ -334,13 +334,19 @@ button {
   text-align: left;
   color: gray;
 }
-.sub-main-cont .easy-payment-cont a {
-  text-decoration: none;
+.sub-main-cont .easy-payment-cont .readmore-arrow-cont {
+  display: flex;
+  align-items: center;
 }
-.sub-main-cont .easy-payment-cont h3 {
-  font-size: 23px;
-  padding: 0px 25px 25px 25px;
+.sub-main-cont .easy-payment-cont .readmore-arrow-cont a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px 10px 25px;
   text-align: left;
+  color: blue;
+}
+.sub-main-cont .easy-payment-cont .readmore-arrow-cont .right-arrow {
+  font-size: 20px;
   color: blue;
 }
 .sub-main-cont .easy-payment-cont img {
@@ -366,13 +372,19 @@ button {
   text-align: left;
   color: gray;
 }
-.sub-main-cont .investment-cont a {
-  text-decoration: none;
+.sub-main-cont .investment-cont .readmore-arrow-cont {
+  display: flex;
+  align-items: center;
 }
-.sub-main-cont .investment-cont h3 {
-  font-size: 23px;
-  padding: 0px 25px 25px 25px;
+.sub-main-cont .investment-cont .readmore-arrow-cont a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px 10px 25px;
   text-align: left;
+  color: blue;
+}
+.sub-main-cont .investment-cont .readmore-arrow-cont .right-arrow {
+  font-size: 20px;
   color: blue;
 }
 .sub-main-cont .investment-cont img {
@@ -399,13 +411,19 @@ button {
   text-align: left;
   color: gray;
 }
-.sub-main-cont .fixed-savings-cont a {
-  text-decoration: none;
+.sub-main-cont .fixed-savings-cont .readmore-arrow-cont {
+  display: flex;
+  align-items: center;
 }
-.sub-main-cont .fixed-savings-cont h3 {
-  font-size: 23px;
-  padding: 0px 25px 25px 25px;
+.sub-main-cont .fixed-savings-cont .readmore-arrow-cont a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px 10px 25px;
   text-align: left;
+  color: blue;
+}
+.sub-main-cont .fixed-savings-cont .readmore-arrow-cont .right-arrow {
+  font-size: 20px;
   color: blue;
 }
 .sub-main-cont .fixed-savings-cont img {
@@ -596,6 +614,18 @@ button {
 .testimonial-sec-cont .carousel-indicators .indicator.active {
   background-color: navy;
   color: white;
+}
+.testimonial-sec-cont .carousel-indicators .indicator-fa {
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.testimonial-sec-cont .carousel-indicators .right-arrow {
+  margin-right: 0px !important;
+  color: navy;
+}
+.testimonial-sec-cont .carousel-indicators .left-arrow {
+  color: navy;
 }
 
 .start-growing-cont {
