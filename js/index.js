@@ -29,3 +29,25 @@ indicators.forEach((indicator, index) => {
   });
 });
 
+
+let menuButton = document.getElementById("menu-button");
+let navSec = document.getElementById("nav-sec");
+
+// console.log(navSec);
+// console.log(menuButton);
+
+menuButton.addEventListener("click", () => {
+  console.log("nav clicked");
+  navSec.classList.toggle("open");
+  menuBtn.classList.add("open_menu");
+})
+
+const menuBtn = document.querySelector(".menu-btn");
+console.log(menuBtn);
+
+// menuBtn.addEventListener("click", () => {
+//   menuBtn.innerHTML = 
+//   `<div class="menu-cont" id="menu-button">
+//   <div class="menu-btn pink-btn"></div>
+//   </div>`
+// })

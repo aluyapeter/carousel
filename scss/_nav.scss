@@ -24,8 +24,41 @@
     }
     
     .nav-items {
+        position: absolute;
+        top: 0;
+        right: 0;
+        list-style: none;
+        background: $secondary-company-color;
+        height: 100%;
+        width: 100%;
         display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        li {
+            padding: 20px;
+            font-size: 20px;
+
+            &:hover {
+                border-bottom: 2px solid white;
+                transition: all ease-in-out 0.5s;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
     }
+    .open {
+        .nav-items {
+            display: flex;
+            @include transition();
+        }
+    }
+
     .login-sign-up-cont {
         display: none;
     }
@@ -111,3 +144,4 @@
         }
     }
 }
+

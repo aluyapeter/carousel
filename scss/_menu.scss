@@ -31,10 +31,18 @@
             background-color: $primary-company-color;
         }
     }
+    .open_menu {
+        .menu-cont {
+            background-color: pink;
+        }
+    }
 }
 
 @media (min-width: 1000px) {
     .menu-cont {
         display: none;
     }
+}
+.pink-btn {
+    background-color: pink;
 }
