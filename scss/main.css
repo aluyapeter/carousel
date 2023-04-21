@@ -21,6 +21,7 @@ button {
   top: 0.5rem;
   width: 25px;
   height: 2px;
+  transition: all 1s;
   background-color: navy;
 }
 .menu-cont .menu-btn::before {
@@ -35,12 +36,26 @@ button {
   content: "";
   position: absolute;
   top: 8px;
-  width: 25px;
+  width: 20px;
   height: 2px;
   background-color: navy;
 }
-.menu-cont .open_menu .menu-cont {
-  background-color: pink;
+
+.open-transition .menu-btn {
+  background-color: transparent;
+  transition: all ease-in-out 1s;
+  transform: rotate(720deg);
+}
+.open-transition .menu-btn::before {
+  background-color: white;
+  transform: rotate(40deg) translateX(8px);
+  transition: all ease-in-out 1s;
+}
+.open-transition .menu-btn::after {
+  background-color: white;
+  transform: rotate(-40deg) translateX(8px);
+  transition: all ease-in-out 1s;
+  width: 25px;
 }
 
 @media (min-width: 1000px) {
@@ -97,7 +112,6 @@ button {
 }
 .nav-main-container .open .nav-items {
   display: flex;
-  transition: all ease-in-out 1s;
 }
 .nav-main-container .login-sign-up-cont {
   display: none;
@@ -120,6 +134,17 @@ button {
     justify-content: space-between;
     list-style: none;
     color: black;
+    position: relative;
+    top: 0;
+    right: 0;
+    list-style: none;
+    background: blue;
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
   }
   .nav-main-container .nav-items .home,
   .nav-main-container .nav-items .about,

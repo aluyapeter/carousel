@@ -12,6 +12,7 @@
         top: 0.5rem;
         width: 25px;
         height: 2px;
+        transition: all 1s;
         background-color: $primary-company-color;
 
         &::before {
@@ -26,14 +27,30 @@
             content: '';
             position: absolute;
             top: 8px;
-            width: 25px;
+            width: 20px;
             height: 2px;
             background-color: $primary-company-color;
         }
     }
-    .open_menu {
-        .menu-cont {
-            background-color: pink;
+
+}
+
+.open-transition {
+    .menu-btn {
+        background-color: transparent;
+        transition: all ease-in-out 1s;
+        transform: rotate(720deg);
+        
+        &::before {
+            background-color: white;
+            transform: rotate(40deg) translateX(8px);
+            transition: all ease-in-out 1s;
+        }
+        &::after {
+            background-color: white;
+            transform: rotate(-40deg) translateX(8px);
+            transition: all ease-in-out 1s;
+            width: 25px;
         }
     }
 }

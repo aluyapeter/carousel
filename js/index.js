@@ -15,6 +15,7 @@ faqsBtn.addEventListener("click", function () {
     faqsAns.style.display = "none"
   }
 })
+
 // carousel indicator
 
 const carouselInner = document.querySelector('.carousel-inner');
@@ -42,12 +43,20 @@ menuButton.addEventListener("click", () => {
   menuBtn.classList.add("open_menu");
 })
 
-const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.querySelector(".menu-cont");
+
+let showMenu = false;
+
 console.log(menuBtn);
 
-// menuBtn.addEventListener("click", () => {
-//   menuBtn.innerHTML = 
-//   `<div class="menu-cont" id="menu-button">
-//   <div class="menu-btn pink-btn"></div>
-//   </div>`
-// })
+menuBtn.addEventListener("click", () => {
+  if (!showMenu) {
+    menuBtn.classList.add("open-transition");
+
+    showMenu = true;
+  } else {
+    menuBtn.classList.remove("open-transition");
+
+    showMenu = false;
+  }
+})

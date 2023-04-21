@@ -55,7 +55,6 @@
     .open {
         .nav-items {
             display: flex;
-            @include transition();
         }
     }
 
@@ -81,6 +80,18 @@
             justify-content: space-between;
             list-style: none;
             color: black;
+            position: relative;
+            top: 0;
+            right: 0;
+            list-style: none;
+            background: $secondary-company-color;
+            height: 100%;
+            width: 100%;
+            display: none;
+            flex-direction: row;
+            // justify-content: center;
+            align-items: center;
+            text-align: center;
 
             .home,
             .about,
@@ -104,6 +115,11 @@
                 }
             }
         }
+        // .open {
+        //     .nav-items {
+        //         display: none;
+        //     }
+        // }
         .login-sign-up-cont {
             display: flex;
 
