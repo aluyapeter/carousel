@@ -12,6 +12,7 @@ button {
   position: relative;
   z-index: 1;
   height: 20px;
+  z-index: 999;
   width: 28px;
   cursor: pointer;
 }
@@ -91,7 +92,9 @@ button {
   list-style: none;
   background: blue;
   height: 100%;
-  width: 100%;
+  width: 70%;
+  z-index: 999;
+  position: fixed;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -131,6 +134,7 @@ button {
   }
   .nav-main-container .nav-items {
     display: flex;
+    position: sticky;
     justify-content: space-between;
     list-style: none;
     color: black;

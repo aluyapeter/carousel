@@ -30,7 +30,9 @@
         list-style: none;
         background: $secondary-company-color;
         height: 100%;
-        width: 100%;
+        width: 70%;
+        z-index: 999;
+        position: fixed;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -77,6 +79,7 @@
         }
         .nav-items {
             display: flex;
+            position: sticky;
             justify-content: space-between;
             list-style: none;
             color: black;
